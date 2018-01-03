@@ -1,0 +1,459 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body {
+    background-color: #345D93;
+    /*background-color:#333333;*/
+    font-family: Roboto;
+    /*	color: #cbd6e4;
+            font-size: 20px;
+            font-weight: 100;*/
+}
+
+/*a {
+        color: #8bb8ea;
+        font-size: 20px;
+        font-weight: 700;
+}*/
+
+a:focus, a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Header */
+.topheader{
+    width: 100%;
+    height: 89px;
+    background-color: #333333;
+}
+
+/*.logo { width: 178px; height:90px; text-align:center; vertical-align: middle;}*/
+
+.lhsNavigation {
+    width: 178px;
+    height: auto;
+    background-color: #333333;
+    vertical-align: top;
+}
+
+.lhsTab-Selected {
+    /*    width: 192px;
+        height: 178px;*/
+    padding: 25px;
+    background-image: -webkit-linear-gradient(0deg, #333333 0%, #345d93 100%);
+    background-image: -moz-linear-gradient(0deg, #333333 0%, #345d93 100%);
+    background-image: -o-linear-gradient(0deg, #333333 0%, #345d93 100%);
+    background-image: linear-gradient(90deg, #333333 0%, #345d93 100%);
+    color: #cbd6e4;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align:middle;
+
+}
+
+.lhsTab-UnSelected {
+    /*	width: 178px;
+            height: 178px;*/
+    padding: 20px;
+    background-color: #333333;
+    color: #cbd6e4;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align:middle;
+
+}
+
+
+.topHeaderTenantName {   /* ex. Netflix North America */
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 100;
+    padding-left:20px;
+}
+
+.moduleHeader{  /* Container DIV for displaying module Header */
+    width: 100%;
+    /*	height: 89px;*/
+    background-color: #345d93;
+    padding: 10px 20px 10px 0px;
+}
+.moduleHeaderName {   /* Title of the selected module showin in Right Hand Side. Ex.Configuration or Analytics or Dashboard */
+    color: #cdd7e5;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.moduleSubHeader{   /* Container dIV for displaying sub-tabs of a Module */
+    width: 100%;
+    /*	height: 89px;*/
+    /*padding-left: 20px;*/
+    background-color: #345d93;
+    text-align: left;
+
+}
+
+.moduleSubTab-Selected {   /* Selected Tab  */
+    color : #cdd7e5 ;
+    font-size : 20px ;
+    font-weight : 700 ;
+    margin-right:50px;
+    border-bottom: 4px solid #cdd7e5;
+    padding: 20px 0px 10px 0px;
+    float: left;
+}
+
+.moduleSubTab-UnSelected {   /* UnSelected Tab  */
+    color: #8bb8ea;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 50px;
+    padding: 20px 0px 10px 0px;
+    float: left;
+}
+
+.moduleContentDiv {   /* this is the container div for showing all Information in RHS */
+    width: 98%;
+    height: auto;
+/*    background-image: -webkit-linear-gradient(-180deg, #2c5084 0%, #345d93 100%);
+    background-image: -moz-linear-gradient(-180deg, #2c5084 0%, #345d93 100%);
+    background-image: -o-linear-gradient(-180deg, #2c5084 0%, #345d93 100%);
+    background-image: linear-gradient(270deg, #2c5084 0%, #345d93 100%);*/
+    padding-top: 15px;
+    /*padding-left: 40px;*/
+    padding-right: 0px;
+    padding-bottom: 20px;
+    border-top:1px solid #5e88bb;
+}
+
+
+
+/* Table Transport - Contains Export To... List Navigation Controls, and, View Per Page widget */
+
+.btnPrimary {    /* Primary Action button  */
+    color: #333333;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 10px 20px 10px 20px;
+    background-color: #8bb8ea;
+    margin-right: 20px;
+    display: inline-block;
+    margin:10px;
+}
+
+.btnPrimaryDisabled {    /* Disabled primary Action button  */
+    color: #6e99cc;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 10px 20px 10px 20px;
+    background-color: #5e88bb;
+    margin-right: 20px;
+}
+
+.btnSecondary { /* Secondary Action Button */
+    border: 1px solid #8bb9ea;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 10px 20px 10px 20px;
+    display: inline-block;   
+    margin-right: 0px;
+    color : #8bbcea;
+}
+
+
+.btnListNavigation {   /* Navigate across the table list  «  ‹  ›  »    */
+    width: 50px;
+    height: 50px;
+    border-width: 1px;
+    border-color: #8bb8ea;
+    border-style: solid;
+    color: #8bb8ea;
+    font-size: 42px; 
+    font-weight: 100;
+    margin: 0px 10px 0px 10px;
+}
+
+.txtListNavigationStatus {    /* used for showing status like "1 to 3 of 3"  */
+    color: rgba(205, 215, 229, 0.5);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.droplist {    /* Export To / Show Per Page drop lists  */
+    border-width: 1px;
+    border-color: #8bb8ea;
+    border-style: solid;
+    color: #8bb8ea;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 10px 10px 10px;
+    margin-right: 10px;
+    line-height: 26px;
+}
+
+.droplistDropDown {
+
+    border-top: none;
+    border-width: 1px;
+    border-color: #8bb8ea;
+    border-style: solid;
+    color: #8bb8ea;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 10px 5px 10px;
+    margin-right: 10px;
+    line-height: 26px;
+    text-align: left;
+    border-radius:2px;
+    background-color: #244264;
+    border:1px solid #8bb8ea;
+}
+
+
+/* Table List */
+.tableHeader {
+    color: #8bb8ea;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left !important ;
+    line-height: 20px;
+    width: auto;
+    height: 30px;
+    border-left: 1px solid #8cabd4;
+    border-bottom: 3px solid #8cabd4;
+}
+
+/* Table List */
+.tableHeaderFault {
+    color: #8bb8ea;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left !important ;
+    line-height: 20px;
+    width: 300px;
+    height: 30px;
+    border-left: 1px solid #8cabd4;
+    border-bottom: 3px solid #8cabd4;
+}
+
+.tableCell {
+
+    color: #cdd7e5;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    border-bottom:1px solid #8cabd4;
+    text-align: left !important;
+    padding-left: 20px;
+}
+
+.tableCellBeingEdited {  /* this can be applied to an entire row (ie. the container DIV that acts as the table row) */
+    background-color: #333333;
+    border-bottom:1px solid #8cabd4;
+}
+
+
+/* No XYZ found Message */
+.errMessageMaster {
+    font-weight: 400;
+    color: #cbd6e4;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.errMessageSuggAction {
+    font-weight: 400;
+    color: #acacac;
+    font-size: 18px;
+    line-height: 22px;
+
+}
+
+
+
+/*  Generic Dialog Box and Overlay  */
+.dialogMask {
+    height:100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.76)
+}
+
+.dialogBox {
+    min-width: 500px;
+    /*min-height: 250px;*/
+    background-color: #31578c;
+    color: #cdd7e5;
+    font-size:18px;
+    line-height:24px;
+
+}
+
+.dialogHeader {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    padding: 20px;
+    height: 50px;
+}
+
+.dialogSubHeader {
+    background-color: #466b9f;
+    padding: 20px;
+    height: 88px;
+}
+
+.dialogSubHeaderLabel {  /* For Text like "MNO NAME" in MNO Name : AT&T */
+    font-weight: 400;
+    color: #cfcfcf;
+    font-size: 14px;
+}
+.dialogGeneralValue {  /* ForText like "AT&T" in MNO Name : AT&T */
+    font-weight: 400;
+    color: #cdd7e5;
+    font-size: 28px;
+}
+.dialogGeneralLabel {  /* For Text like "Name:" in Name: John Doe */
+    color: #cdd7e5;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.dialogGeneralValue {  /* ForText like "John Doe" in Name : John Doe */
+    font-weight: 400;
+    color: #cdd7e5;
+    font-size: 20px;
+}
+
+.dialogFooterWithButtons {  /* This is where the buttons of the Dialog box appears  */
+    background-image: url(../images/dialog-shadow.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    width:100%;
+    padding: 10px;
+    height: 80px;
+}
+
+/*tables*/
+/*#example{
+    padding-left: 30px;
+}*/
+
+/* start css for new style dropdown only*/
+.TamDropDownHolder {
+display: inline-block;
+position: relative;
+}
+
+.TamDropDownMaster {
+background-color: #244264;
+display:block;
+padding:10px 10px 10px 20px;
+color:#8bb8ea;
+border-radius:2px;
+cursor:pointer;
+border:1px solid #8bb8ea;
+
+}
+
+.TamDropDownMaster img{padding-top:5px; padding-left:5px;}
+
+.TamDropDownMenu {
+display:none;
+position: absolute;
+background-color:#244264;
+min-width:200px;
+z-index:1;
+border:1px solid #8bb8ea;
+font-size : 14px;
+}
+
+.TamDropDownMenu a{display:block; text-align: left;padding:10px; color:#8bb8ea; border-bottom:1px solid #8BB8EA;}
+.TamDropDownHolder:hover .TamDropDownMenu{ display:block;}
+/* end css for new style dropdown only*/
+
+.TamFooter {
+background-color:#313131;
+height:50px;
+text-align:right;
+padding:20px;
+color: #FFFFFF;
+}
+
+.alertErrMsg {
+    color: orange;
+    margin: -18px 0px 10px 40px;
+    font-weight: 700; 
+    font-family: Roboto; 
+    padding-left : -5%;
+}
+.alertErrMsgImage{
+    width: 17px;
+    margin : 0 0 0 15px;
+}
+
+.textBoxPopup{
+    width: 175px;
+    margin-left: 190px;
+    margin-top: -23px;
+    height: 29px;
+    border-radius:0px;
+    color : black;
+}
+
+.modalBtnHeight{
+    height: 40px;
+}
+
+
+<!--/* Profile heading.  For example "Sign in Credentials" */
+.profileHeading {
+  font-family: "Roboto";
+  font-size: 16px;
+  color:#fff;
+}
+
+/* Profile label. For example "Usename" */
+.profileLabel {
+font-family: "Roboto";
+font-size: 16px;
+color:#cdd7e5;
+
+}
+
+/* Profile Value. For example "English, +91988392829" */
+.profileValue {
+font-family: "Roboto";
+font-size: 16px;
+font-weight: bold;
+color:#cdd7e5;
+
+}-->
+.form-control{
+    border-radius: 0px;
+}
+
+.btn{
+    border-radius: 0px;
+}
+
+.Editvalue{
+    font-family: "Roboto";
+font-size: 16px;
+
+color:#000;
+
+}
+
+.disclaimerlLabel {
+                color: orange;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 41px;
+                margin-left: -10px;
+            }

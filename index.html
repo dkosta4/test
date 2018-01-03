@@ -1,0 +1,252 @@
+<html lang="en">
+<head>
+        <title>Tambora Video Optimizer</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="img/profle_24.png">
+
+<!-- Font-->
+        <link href="css/elegant-icons-style.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">  
+        
+<!--  bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <script src="https://www.google.com/jsapi"></script>
+    
+<!--  CSS  -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!-- Script   -->
+    
+    
+</head>
+<body>
+   <div id="wrapper">
+
+<!-- Sidebar -->
+<div id="sidebar-wrapper">
+    <nav id="nav">
+        <a id="user">
+            <img src="http://www.venmond.com/demo/vendroid/img/avatar/big.jpg" alt="">
+            <p href="#home">Nidhi Singh</p>
+        </a>
+        <a id="selected">
+            <img src="img/icon-lhs-dashboard.png" alt="" style=" ">
+            <p href="#home">Dashboard</p>
+        </a>
+        <a>
+            <img src="img/icon-lhs-analytics.png" alt="" style=" ">
+            <p href="#home">Analytics</p>
+        </a>
+        <a>
+            <img src="img/icon-lhs-configuration.png" alt="" style=" ">
+            <p href="#home">Configurations</p>
+        </a>
+        <a>
+            <img src="img/icon-lhs-analytics.png" alt="" style=" ">
+            <p href="#home">KPI</p>
+        </a>
+        <a>
+            <img src="img/icon-lhs-fault.png" alt="" style=" ">
+            <p href="#home">Fault</p>
+        </a>
+        <a>
+            <img src="img/icon-lhs-analytics.png" alt="" style=" ">
+            <p href="#home">Billing</p>
+        </a>
+    </nav>
+</div>
+
+<div id="page-content-wrapper">
+    
+<!-- Header -->
+<div class="content-header">
+    <h1 id="home">
+        <a id="menu-toggle" href="#" class="glyphicon glyphicon-align-justify btn-menu toggle">
+            <i class="fa fa-bars"></i>
+        </a>
+    </h1>
+    <a class="navbar-brand" href="#"><img alt="logo" src="img/tambora_logo.png"></a>
+    <a class="navbar-brand-name" href="#"><h1>SURFLINE-GHANA</h1></a>
+    <ul class="nav pull-right top-menu">
+        <li class="dropdown">
+            <div data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <label id="curuser" class="username">Nidhi Singh</label><img src="img/profle_24.png" alt="" style="cursor: pointer">
+            </div>
+            <ul class="dropdown-menu extended logout">
+                <div class="log-arrow-up"></div>
+                <li class="eborder-top">
+                    <a href="profile.jsp" id="myprofile"><i class="icon_profile"></i> My Profile</a>
+                </li>
+                <li>
+                    <a href="logout.jsp" id="logout"><i class="icon_key_alt"></i> Log Out</a>
+                </li>
+            </ul>
+        </li>
+        <!-- user login dropdown end -->
+    </ul>
+</div>
+
+<!-- Page Content -->   
+<div class="page-content inset" data-spy="scroll" data-target="#spy">
+
+<!--page-title-->
+<div class="row page-header m-0 mb-4">
+        <h1 class="page-title col-xs-6 col-sm-6 col-md-6">Dashboard</h1>
+        <div class=" col-xl-6 col-xs-6 col-sm-6 col-md-6 text-left text-sm-right theme-dropdown ">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown button
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </div>   
+    </div>
+</div>  
+    
+<!-- Dashboard widgets -->
+<div class="row">
+    <div class="col-xl-3 col-sm-6 mb-3">
+      <div class="card text-white dash-widget o-hidden">
+        <div class="card-body">
+        <p class="mr-5">Total Video</p>
+        <h5>529 K<span>(529K)</span></h5>
+        </div>
+        <div class="w-chart">
+            <svg width="260" height="80" style="overflow: hidden;" aria-label="A chart."><defs id="defs"><clipPath id="_ABSTRACT_RENDERER_ID_4"><rect x="33" y="16" width="194" height="49"></rect></clipPath><filter id="_ABSTRACT_RENDERER_ID_8"><feGaussianBlur in="SourceAlpha" stdDeviation="2"></feGaussianBlur><feOffset dx="1" dy="1"></feOffset><feComponentTransfer><feFuncA type="linear" slope="0.1"></feFuncA></feComponentTransfer><feMerge><feMergeNode></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter></defs><rect x="0" y="0" width="260" height="80" stroke="none" stroke-width="0" fill="#192e5d"></rect><g><rect x="33" y="16" width="194" height="49" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://192.168.13.91:8443/tamboraexternalportal/jsp/newUIDashBoard.jsp#_ABSTRACT_RENDERER_ID_4)"><g><g><path d="M33.5,64.5L33.5,64.5L33.5,28.020000000000003L65.66666666666666,28.5L97.83333333333333,28.020000000000003L130,28.020000000000003L162.16666666666666,64.5L194.33333333333331,64.5L226.5,64.5L226.5,64.5L194.33333333333331,64.5L162.16666666666666,64.5L130,64.5L97.83333333333333,64.5L65.66666666666666,64.5L33.5,64.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#ffffff"></path></g></g><g><rect x="33" y="64" width="194" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g><g><path d="M33.5,28.020000000000003L65.66666666666666,28.5L97.83333333333333,28.020000000000003L130,28.020000000000003L162.16666666666666,64.5L194.33333333333331,64.5L226.5,64.5" stroke="#ffffff" stroke-width="2" fill-opacity="1" fill="none"></path></g></g><g></g><g><g><text text-anchor="end" x="24" y="67.65" font-family="Arial" font-size="9" stroke="none" stroke-width="0" fill-opacity="1" fill="none">0</text></g><g><text text-anchor="end" x="24" y="55.65" font-family="Arial" font-size="9" stroke="none" stroke-width="0" fill-opacity="1" fill="none">25</text></g><g><text text-anchor="end" x="24" y="43.65" font-family="Arial" font-size="9" stroke="none" stroke-width="0" fill-opacity="1" fill="none">50</text></g><g><text text-anchor="end" x="24" y="31.65" font-family="Arial" font-size="9" stroke="none" stroke-width="0" fill-opacity="1" fill="none">75</text></g><g><text text-anchor="end" x="24" y="19.65" font-family="Arial" font-size="9" stroke="none" stroke-width="0" fill-opacity="1" fill="none">100</text></g></g></g><g></g></svg></div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="card text-white dash-widget o-hidden">
+            <div class="card-body">
+            <p class="mr-5">% Success</p>
+            <h5>39.7%<span>(39.7%)</span></h5>
+            </div>
+            <div class="w-chart">
+                <svg width="260" height="80" style="overflow: hidden;" aria-label="A chart."><defs id="defs"><clipPath id="_ABSTRACT_RENDERER_ID_4"><rect x="33" y="16" width="194" height="49"></rect></clipPath><filter id="_ABSTRACT_RENDERER_ID_8"><feGaussianBlur in="SourceAlpha" stdDeviation="2"></feGaussianBlur><feOffset dx="1" dy="1"></feOffset><feComponentTransfer><feFuncA type="linear" slope="0.1"></feFuncA></feComponentTransfer><feMerge><feMergeNode></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter></defs><rect x="0" y="0" width="260" height="80" stroke="none" stroke-width="0" fill="#192e5d"></rect><g><rect x="33" y="16" width="194" height="49" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://192.168.13.91:8443/tamboraexternalportal/jsp/newUIDashBoard.jsp#_ABSTRACT_RENDERER_ID_4)"><g><g><path d="M33.5,64.5L33.5,64.5L33.5,28.020000000000003L65.66666666666666,28.5L97.83333333333333,28.020000000000003L130,28.020000000000003L162.16666666666666,64.5L194.33333333333331,64.5L226.5,64.5L226.5,64.5L194.33333333333331,64.5L162.16666666666666,64.5L130,64.5L97.83333333333333,64.5L65.66666666666666,64.5L33.5,64.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#ffffff"></path></g></g><g><rect x="33" y="64" width="194" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g><g><path d="M33.5,28.020000000000003L65.66666666666666,28.5L97.83333333333333,28.020000000000003L130,28.020000000000003L162.16666666666666,64.5L194.33333333333331,64.5L226.5,64.5" stroke="#ffffff" stroke-width="2" fill-opacity="1" fill="none"></path></g></g><g></g><g><g><text text-anchor="end" x="24" y="67.65" font-family="Arial" font-size="9" stroke="none" stroke-width="0" fill-opacity="1" fill="none">0</text></g><g><text text-anchor="end" x="24" y="55.65" font-family="Arial" font-size="9" stroke="none" stroke-width="0" fill-opacity="1" fill="none">25</text></g><g><text text-anchor="end" x="24" y="43.65" font-family="Arial" font-size="9" stroke="none" stroke-width="0" fill-opacity="1" fill="none">50</text></g><g><text text-anchor="end" x="24" y="31.65" font-family="Arial" font-size="9" stroke="none" stroke-width="0" fill-opacity="1" fill="none">75</text></g><g><text text-anchor="end" x="24" y="19.65" font-family="Arial" font-size="9" stroke="none" stroke-width="0" fill-opacity="1" fill="none">100</text></g></g></g><g></g></svg></div>
+          </div>
+    </div>
+    <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="card text-white dash-widget o-hidden">
+            <div class="card-body">
+            <p class="mr-5">Data Volume</p>
+            <h5>3.122 PB<span>(3.11 PB)</span></h5>
+            </div>
+            <div class="w-chart">
+                <svg width="260" height="80" style="overflow: hidden;" aria-label="A chart."><defs id="defs"><clipPath id="_ABSTRACT_RENDERER_ID_4"><rect x="33" y="16" width="194" height="49"></rect></clipPath><filter id="_ABSTRACT_RENDERER_ID_8"><feGaussianBlur in="SourceAlpha" stdDeviation="2"></feGaussianBlur><feOffset dx="1" dy="1"></feOffset><feComponentTransfer><feFuncA type="linear" slope="0.1"></feFuncA></feComponentTransfer><feMerge><feMergeNode></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter></defs><rect x="0" y="0" width="260" height="80" stroke="none" stroke-width="0" fill="#192e5d"></rect><g><rect x="33" y="16" width="194" height="49" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://192.168.13.91:8443/tamboraexternalportal/jsp/newUIDashBoard.jsp#_ABSTRACT_RENDERER_ID_4)"><g><g><path d="M33.5,64.5L33.5,64.5L33.5,28.020000000000003L65.66666666666666,28.5L97.83333333333333,28.020000000000003L130,28.020000000000003L162.16666666666666,64.5L194.33333333333331,64.5L226.5,64.5L226.5,64.5L194.33333333333331,64.5L162.16666666666666,64.5L130,64.5L97.83333333333333,64.5L65.66666666666666,64.5L33.5,64.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#ffffff"></path></g></g><g><rect x="33" y="64" width="194" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g><g><path d="M33.5,28.020000000000003L65.66666666666666,28.5L97.83333333333333,28.020000000000003L130,28.020000000000003L162.16666666666666,64.5L194.33333333333331,64.5L226.5,64.5" stroke="#ffffff" stroke-width="2" fill-opacity="1" fill="none"></path></g></g><g></g><g><g><text text-anchor="end" x="24" y="67.65" font-family="Arial" font-size="9" stroke="none" stroke-width="0" fill-opacity="1" fill="none">0</text></g><g><text text-anchor="end" x="24" y="55.65" font-family="Arial" font-size="9" stroke="none" stroke-width="0" fill-opacity="1" fill="none">25</text></g><g><text text-anchor="end" x="24" y="43.65" font-family="Arial" font-size="9" stroke="none" stroke-width="0" fill-opacity="1" fill="none">50</text></g><g><text text-anchor="end" x="24" y="31.65" font-family="Arial" font-size="9" stroke="none" stroke-width="0" fill-opacity="1" fill="none">75</text></g><g><text text-anchor="end" x="24" y="19.65" font-family="Arial" font-size="9" stroke="none" stroke-width="0" fill-opacity="1" fill="none">100</text></g></g></g><g></g></svg></div>
+          </div>
+    </div>
+    <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="card text-white dash-widget o-hidden">
+            <div class="card-body">
+            <p class="mr-5">Revenue</p>
+            <h5>3.12 M<span>(3.11)</span></h5>
+            </div>
+            <div class="w-chart">
+                <svg width="260" height="80" style="overflow: hidden;" aria-label="A chart."><defs id="defs"><clipPath id="_ABSTRACT_RENDERER_ID_4"><rect x="33" y="16" width="194" height="49"></rect></clipPath><filter id="_ABSTRACT_RENDERER_ID_8"><feGaussianBlur in="SourceAlpha" stdDeviation="2"></feGaussianBlur><feOffset dx="1" dy="1"></feOffset><feComponentTransfer><feFuncA type="linear" slope="0.1"></feFuncA></feComponentTransfer><feMerge><feMergeNode></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter></defs><rect x="0" y="0" width="260" height="80" stroke="none" stroke-width="0" fill="#192e5d"></rect><g><rect x="33" y="16" width="194" height="49" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://192.168.13.91:8443/tamboraexternalportal/jsp/newUIDashBoard.jsp#_ABSTRACT_RENDERER_ID_4)"><g><g><path d="M33.5,64.5L33.5,64.5L33.5,28.020000000000003L65.66666666666666,28.5L97.83333333333333,28.020000000000003L130,28.020000000000003L162.16666666666666,64.5L194.33333333333331,64.5L226.5,64.5L226.5,64.5L194.33333333333331,64.5L162.16666666666666,64.5L130,64.5L97.83333333333333,64.5L65.66666666666666,64.5L33.5,64.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#ffffff"></path></g></g><g><rect x="33" y="64" width="194" height="1" stroke="none" stroke-width="0" fill="#333333"></rect></g><g><path d="M33.5,28.020000000000003L65.66666666666666,28.5L97.83333333333333,28.020000000000003L130,28.020000000000003L162.16666666666666,64.5L194.33333333333331,64.5L226.5,64.5" stroke="#ffffff" stroke-width="2" fill-opacity="1" fill="none"></path></g></g><g></g><g><g><text text-anchor="end" x="24" y="67.65" font-family="Arial" font-size="9" stroke="none" stroke-width="0" fill-opacity="1" fill="none">0</text></g><g><text text-anchor="end" x="24" y="55.65" font-family="Arial" font-size="9" stroke="none" stroke-width="0" fill-opacity="1" fill="none">25</text></g><g><text text-anchor="end" x="24" y="43.65" font-family="Arial" font-size="9" stroke="none" stroke-width="0" fill-opacity="1" fill="none">50</text></g><g><text text-anchor="end" x="24" y="31.65" font-family="Arial" font-size="9" stroke="none" stroke-width="0" fill-opacity="1" fill="none">75</text></g><g><text text-anchor="end" x="24" y="19.65" font-family="Arial" font-size="9" stroke="none" stroke-width="0" fill-opacity="1" fill="none">100</text></g></g></g><g></g></svg></div>
+          </div>
+        </div>
+</div>
+
+<!-- Chart  -->
+<div class="row">
+        <div class="col-lg-6">
+          <!-- Chart Card-->
+          <div class="card primary-card no-radius mb-3">
+            <div class="card-header">
+              <i class="fa fa-bar-chart"></i> Data Volume Vs Revenue (Last 7 Days)</div>
+            <div class="card-body overflow-auto">
+            <img src="img/chart/test_chart1.png" class="w-100"/>    
+            </div>
+            <div class="card-footer small text-light">Updated at 11:59 PM</div>
+          </div>
+        </div>
+    
+    <div class="col-lg-6">
+          <!-- Table Card-->
+    <div class="card primary-card no-radius mb-3">
+        <div class="card-header"><i class="fa fa-table"></i> Top 5 Geography Revenue (Last 7 Days)</div>
+        <div class="card-body">
+          <div class="table-responsive align-top">
+            <div id="dataTable_wrapper">
+            <table class="table dataTable" id="dataTable" cellspacing="0" role="grid">
+              <thead>
+                <tr role="row">
+                    <th>Geography Name</th>
+                    <th>Revenue (In $)</th>
+                </tr>
+              </thead>
+              <tbody>
+              <tr>
+                  <td>Voda Fone South Zone</td>
+                  <td>390.48 K</td>
+                </tr>
+              <tr>
+                  <td>Voda Fone South Zone</td>
+                  <td>390.48 K</td>
+                </tr>
+              <tr>
+                  <td>Voda Fone South Zone</td>
+                  <td>390.48 K</td>
+                </tr>
+              <tr>
+                  <td>Voda Fone South Zone</td>
+                  <td>390.48 K</td>
+                </tr>
+              <tr>
+                  <td>Voda Fone South Zone</td>
+                  <td>390.48 K</td>
+                </tr>
+            </tbody>
+            </table></div>
+          </div>
+        </div>
+        <div class="card-footer small text-light">Updated at 11:59 PM</div>
+      </div>
+        </div>
+        
+      </div>    
+
+</div>
+
+</div>
+
+    </div>
+    
+    
+<!-- Script   -->    
+<script  type="text/javascript" >
+           
+	/*Menu-toggle*/
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+
+    /*Scroll Spy*/
+    $('body').scrollspy({ target: '#spy', offset:80});
+
+    /*Smooth link animation*/
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    }); 
+	
+    </script>
+</body>
+</html>

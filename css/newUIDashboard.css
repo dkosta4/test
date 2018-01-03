@@ -1,0 +1,63 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 2, 2017, 2:49:48 PM
+    Author     : mithunk@sawridge.com
+*/
+.first {
+    /*width: 100px;*/
+    float: left;
+    font-weight:bold;
+    font-size: 22px;;
+    /*height: 300px;*/
+/*    background-color: blue;*/
+}
+.second {
+    /*width: 200px;*/
+    float: left;
+    font-weight:lighter;
+    font-size: 18px;;
+    /*height: 300px;*/
+/*    background-color: green;*/
+}
+.clear {
+    clear: both;
+}
+
+#right_tab_container_upper{
+    background-color: #192e5d;
+    margin-bottom : 20px;
+    margin-top: 9px;
+    padding: 0 10px;
+}
+
+#right_tab_container_lower{
+    background-color: #192e5d;
+    margin-top:  10px;
+    padding: 0 10px;
+}
+
+.tableCellBackGroundColor{
+    background-color: #192e5d;
+}
+
+/* drop down options text color modified to black color instead of white color */
+select{
+    color:#000000;
+}
+
+#table_div_title{
+    margin: 10px;
+    font-size: 22px;
+}
+
+.marginDiv{
+    margin:9px;background-color: #192E5D;width: 45%;display: inline-block;
+}
+
+.rightcontainer{
+    height: 100%;padding-left: 8px;padding-right: 23px;
+}
